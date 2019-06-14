@@ -1,4 +1,4 @@
-var breakpoint = {
+let breakpoint = {
     'small': 767,
     'medium': 992,
     'large': 1200
@@ -6,12 +6,12 @@ var breakpoint = {
 
 function respondTo(breakpoint, callback, runWhenCalled, addEvent) {
     if (breakpoint >= window.innerWidth) {
-        var active = true;
+        let active = true;
         if (runWhenCalled) {
             requestAnimationFrame(callback);
         }
     } else {
-        var active = false;
+        let active = false;
     }
 
     if (addEvent) {
@@ -33,12 +33,12 @@ function respondTo(breakpoint, callback, runWhenCalled, addEvent) {
 
 function respondFrom(breakpoint, callback, runWhenCalled, addEvent) {
     if (breakpoint <= window.innerWidth) {
-        var active = true;
+        let active = true;
         if (runWhenCalled) {
             requestAnimationFrame(callback);
         }
     } else {
-        var active = false;
+        let active = false;
     }
 
     if (addEvent) {

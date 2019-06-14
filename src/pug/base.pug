@@ -2,27 +2,27 @@ extends template
 
 block vars
   -
-    var siteTitle = 'Some Site';
-    var pageTitle = 'Some Page';
+    var siteTitle   = 'Some Site';
+    var pageTitle   = 'Welcome!';
     var description = 'Some Description';
-    var url       = '';
-    var image     = url + 'images/logo.svg';
+    var url         = '';
+    var image       = url + 'images/logo.png';
   -
     var html = {
-      attrs: {
-        lang: 'ru'
-      },
-      classList: []
+    attrs: {
+    lang: 'ru'
+    },
+    classList: []
     }
   -
     var body = {
-      attrs: {},
-      classList: []
+    attrs: {},
+    classList: []
     }
   -
     var layout = {
-      attrs: {},
-      classList: []
+    attrs: {},
+    classList: []
     }
 
 append meta
@@ -31,14 +31,13 @@ append meta
   meta(property='og:type', content='website')
   meta(property='og:url', content=url)
   meta(property='og:image', content=image)
-  meta(property='og:image:type', content='image/svg')
-  meta(property='og:image:width', content='174')
-  meta(property='og:image:height', content='28')
+  meta(property='og:image:type', content='image/jpg')
+  meta(property='og:image:width', content='100')
+  meta(property='og:image:height', content='100')
   meta(property='og:description', content=description)
 
 
 block styles
-  link(href='https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700&display=swap' rel='stylesheet')
   link(href='css/main.css' rel='stylesheet')
 
 block scripts

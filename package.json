@@ -1,12 +1,12 @@
 {
-  "name": "gulp-template",
-  "version": "0.1.0",
+  "name": "amazing-form",
+  "version": "1.0.0",
   "license": "ISC",
+  "author": "Eugene Naumov <xensers@gmail.com> (http://xensers.github.io)",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
     "build": "gulp build"
   },
-  "author": "Eugene Naumov",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-transform-runtime": "^7.4.4",

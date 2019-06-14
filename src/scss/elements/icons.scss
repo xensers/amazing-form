@@ -1,0 +1,29 @@
+.icon
+{
+    display: inline-block;
+
+    vertical-align: middle;
+
+    width: 1em;
+    height: 1em;
+
+    font-size: 1em;
+
+    background: url('../images/sprite.svg') no-repeat 1em -1em;
+    background-size: 3em 1em;
+
+    &_arrow-left
+    {
+        background-position: 0 0;
+    }
+
+    &_success
+    {
+        background-position: -1em 0;
+    }
+
+    &_error
+    {
+        background-position: -2em 0;
+    }
+}

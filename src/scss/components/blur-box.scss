@@ -1,0 +1,98 @@
+.blur-box
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    min-height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+
+    background: url('../images/background.jpg') no-repeat center center fixed #854069;
+    background-size: cover;
+
+    @include retina
+    {
+        background-image: url('../images/background@2x.jpg');
+    }
+
+    &:before
+    {
+        content: '';
+
+        display: block;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        opacity: .3;
+        background: #000;
+    }
+
+    &__outer
+    {
+        position: relative;
+
+        padding: 2rem 2rem 1rem;
+
+        width: 39rem;
+        max-width: 100%;
+
+        animation: fadeIn 2s ease 2s;
+        animation-fill-mode: backwards;
+
+        transition: top .1s, left .1s;
+
+        &:after
+        {
+            content: '';
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: block;
+
+            width: 100%;
+            height: 100%;
+
+            filter: blur(.3rem);
+
+            background: url('../images/background.jpg') no-repeat center center fixed #854069;
+            background-size: cover;
+            box-shadow: 0 0 2rem #000;
+
+            @include retina
+            {
+                background-image: url('../images/background@2x.jpg');
+            }
+        }
+    }
+
+    &__inner
+    {
+        position: relative;
+        z-index: 1;
+
+        animation: fadeIn 2s ease 3s;
+        animation-fill-mode: backwards;
+    }
+
+    &__content
+    {
+        margin: .5rem auto;
+
+        width: 23.0625rem;
+        max-width: 100%;
+
+        text-align: center;
+    }
+}

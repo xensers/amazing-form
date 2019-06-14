@@ -1,23 +1,7 @@
 .layout
 {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-
-  &__header
-  {
-    padding: 0 1rem;
-  }
-
-  &__content
-  {
-    padding: 0 1rem;
-    align-self: center;
-  }
-
-  &__footer
-  {
-    padding: 0 1rem;
-  }
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
 }

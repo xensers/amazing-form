@@ -196,3 +196,65 @@
     animation: fadeOutRight 0.5s ease-in-out;
     animation-fill-mode: forwards;
 }
+
+
+@keyframes scaleIn
+{
+    from
+    {
+        transform: scale(2);
+        opacity: 0;
+    }
+
+    to
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.scaleIn
+{
+    animation: scaleIn 0.5s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes susses-state-1
+{
+    0%
+    {
+        transform: scale(1) translateY(0%);
+    }
+
+    100%
+    {
+        transform: scale(2) translateY(50%);
+    }
+}
+
+@keyframes susses-state-2
+{
+    0%
+    {
+        transform: scale(2) translateY(50%) rotateY(0);
+        opacity: 1;
+    }
+
+    50%
+    {
+        transform: scale(2) translateY(25%) rotateY(360deg);
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: scale(2) translateY(50%) rotateY(720deg);
+        opacity: 0;
+    }
+}
+
+.fadeIn
+{
+    animation: fadeIn 0.5s ease-in-out;
+    animation-fill-mode: backwards;
+}
